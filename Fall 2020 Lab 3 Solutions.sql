@@ -14,7 +14,7 @@ SELECT c.CustomerID,
 			 THEN 'Regular'
 		  WHEN COUNT(soh.SalesOrderID) BETWEEN 6 AND 10
 			 THEN 'Often'
-		  ELSE 'Loyal'
+          ELSE "hello"
 	   END AS [Order Frequency]
 FROM Sales.Customer c
 LEFT OUTER JOIN Sales.SalesOrderHeader soh
